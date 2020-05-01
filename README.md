@@ -4,6 +4,11 @@
 
 - `artist`: The artist ID
 
+## Environment Variables
+
+- `CLIENT_ID`: Spotify Client ID
+- `CLIENT_SECRET`: Spotify Client Secret
+
 ## Install
 
 ```bash
