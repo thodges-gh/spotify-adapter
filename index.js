@@ -15,7 +15,9 @@ const createRequest = (input, callback) => {
   Requester.requestRetry({
     url: 'https://accounts.spotify.com/api/token',
     method: 'POST',
-    data: 'grant_type=client_credentials',
+    form: {
+      grant_type: 'client_credentials'
+    },
     headers: {
       Authorization: `Bearer ${encodedAuth.toString('base64')}`,
       'Content-Type': 'application/x-www-form-urlencoded'
